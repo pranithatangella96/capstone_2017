@@ -51,25 +51,65 @@ void loop() {
 
 void startShow(int i) {
   switch(i){
-    case 0: colorWipe(strip.Color(0, 0, 0), 50);    // Black/off
+    case 0: colorWipe(strip.Color(0, 0, 0), 50);// Black/off
+      previous_millis = millis();
+      while(current_millis - previous_millis <= 3000){
+        current_millis = millis();
+      }
             break;
     case 1: colorWipe(strip.Color(255, 0, 0), 50);  // Red
+      previous_millis = millis();
+      while(current_millis - previous_millis <= 3000){
+        current_millis = millis();
+      }
             break;
     case 2: colorWipe(strip.Color(0, 255, 0), 50);  // Green
+      previous_millis = millis();
+      while(current_millis - previous_millis <= 3000){
+        current_millis = millis();
+      }
             break;
     case 3: colorWipe(strip.Color(0, 0, 255), 50);  // Blue
+      previous_millis = millis();
+      while(current_millis - previous_millis <= 3000){
+        current_millis = millis();
+      }
             break;
     case 4: theaterChase(strip.Color(127, 127, 127), 50); // White
+      previous_millis = millis();
+      while(current_millis - previous_millis <= 3000){
+        current_millis = millis();
+      }
             break;
     case 5: theaterChase(strip.Color(127,   0,   0), 50); // Red
+      previous_millis = millis();
+      while(current_millis - previous_millis <= 3000){
+        current_millis = millis();
+      }
             break;
     case 6: theaterChase(strip.Color(  0,   0, 127), 50); // Blue
+      previous_millis = millis();
+      while(current_millis - previous_millis <= 3000){
+        current_millis = millis();
+      }
             break;
     case 7: rainbow(1);
+      previous_millis = millis();
+      while(current_millis - previous_millis <= 3000){
+        current_millis = millis();
+      }
             break;
     case 8: rainbowCycle(1);
+      previous_millis = millis();
+      while(current_millis - previous_millis <= 3000){
+        current_millis = millis();
+      }
             break;
     case 9: theaterChaseRainbow(1);
+      previous_millis = millis();
+      while(current_millis - previous_millis <= 3000){
+        current_millis = millis();
+      }
             break;
   }
 }

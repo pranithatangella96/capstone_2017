@@ -20,6 +20,8 @@ Adafruit_NeoPixel strip = Adafruit_NeoPixel(PIXEL_COUNT, PIXEL_PIN, NEO_GRB + NE
 
 bool oldState = HIGH;
 int showType = 0;
+long current_millis;
+long previous_millis;
 
 void setup() {
   pinMode(BUTTON_PIN, INPUT_PULLUP);
